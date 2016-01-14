@@ -1,85 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Curriculum Vitae</title>
+    <!--<link rel="stylesheet" href="style.css" />-->
+    <style>
+       body{
+    background-size: auto;
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#me,#education,#work,#lists,#footnotes {
+    width: 100%;
+    margin: 90px 0 0 0;
+}
+
+h1 {
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 4em;
+    margin: 0 0 0 0;
+    line-height: .8em;
+}
+
+h2 {
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 4em;
+    line-height: .2em;
+}
+
+h3 {
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+}
+
+h4 {
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 0 0 10px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-indent: none;
+}
+
+sup {
+    font-family: Courier New, Courier, monospace;
+    position: relative;
+    color: #0000ff;
+} 
+
+#me sup {
+    font-size: .25em;
+    top: -1.5em;
+}
+
+#work sup {
+    font-size: .5em;
+    top:-.5em;
+}
+
+#page {
+    padding: 5%;
+}
+
+#me {
+    margin: 10px 0px 50px 0px;
+}
+
+#bio h3 {
+    margin-top: 80px;
+}
+
+.background {
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index: -1;
+}
+
+.list {
+    display: inline-block;
+}
+
+.list:not(.first) {
+    margin: 0px 0px 0px 20px;
+}
+
+.job { 
+   padding: 15px 0 0 0;
+}
+
+    </style
 </head>
+
 <body>
+    <img class="background" src="content/images/portrait.jpg" />
     <div id="page">
-    
-    <div id="me">
-        <h1>K. Colin Pinegar</h1>
-        <h2>colinpin@gmail.com</h2>
-        <h2><a href="http://colinpinegar.com">colinpinegar.com</a></h2>
-        <div id="bio">
-            <p>I am a designer working remotely for <a href="http://fuzzco.com">Fuzzco</a> from beautiful Boise, ID.</p>
+
+        <div id="me">
+            <h1>K.<sup><a href=#footnotes>1</a></sup> Colin Pinegar</h1>
+            <h2>(801) 6<span>41-6</span>25<span>1</span></h2>
+            <h2>colinpin@gmail.com</h2>
+            <h2><a href="http://colinpinegar.com">colinpinegar.com</a></h2>
+            <div id="bio">
+                <h3>I am a designer working remotely for <a href="http://fuzzco.com">Fuzzco</a> from beautiful Boise, ID.</h3>
+            </div>
         </div>
-    </div>
-    
-    <div id="work">
-        <div class="job">
-            <h3>Job Title, <span class="employer">Employer Name,</span><span class="dates"></span></h3>
-            <p>Description of job</p>
-            <h6>Skills used</h6>
+
+        <div id="education">
+            <div class="school">
+                <h4>Education</h4>
+                <h3>
+                    <span class="degree">BFA Graphic Design, </span>
+                    <span class="school">Brigham Young University. </span>
+                    <span class="location">Provo, Utah </span>
+                    <span class="grad-date">2011.</span>
+                </h3>
+            </div>
         </div>
-        
-        <div class="job">
-            <h3>Job Title, <span class="employer">Employer Name,</span><span class="dates"></span></h3>
-            <p>Description of job</p>
-            <h6>Skills used</h6>
+
+        <div id="work">
+            <h4>Experience</h4>
+            <div class="job">
+                <h3>
+                    <span class="dates">August 2012–present: </span>
+                    <span class="title">Designer/Art Director<sup><a href=#footnotes>2</a></sup>; </span>
+                    <span class="employer"><a href="http://fuzzco.com">Fuzzco,</a> </span>
+                    <span class="location">Charleston, South Carolina</span>
+                </h3>
+            </div>
+
+            <div class="job">
+                <h3>
+                    <span class="dates">February 2012–July 2012: </span>
+                    <span class="title">Freelance Designer<sup><a href=#footnotes>3</a></sup>; </span>
+                    <span class="employer"><a href="http://fuseproject.com">Fuseproject,</a> </span>
+                    <span class="location">San Francisco, California.</span>
+                </h3>
+            </div>
+
+            <div class="job">
+                <h3>
+                    <span class="dates">August 2010–October 2011: </span>
+                    <span class="title">Web Designer/Front-end Developer<sup><a href=#footnotes>4</a></sup>; </span>
+                    <span class="employer"><a href="http://vivint.com">Vivint,</a> </span>
+                    <span class="location">Provo, Utah.</span>
+                </h3>
+            </div>
+
+            <div class="job">
+                <h3>
+                    <span class="dates">September 2009–August 2010:  </span>
+                    <span class="title">Designer<sup><a href=#footnotes>5</a></sup>; </span>
+                    <span class="employer"><a href="http://visualarts.byu.edu/">BYU</a><sup><a href=#footnotes>6</a></sup> Department of Visual Arts,<sup><a href=#footnotes>7</a></sup></span>
+                    <span class="location">Provo, Utah</span>
+                </h3>
+            </div>
+            
+            <div class="job">
+                <h3>
+                    <span class="dates">April 2009–August 2010: </span>
+                    <span class="title">Letterpress Lab Assistant<sup><a href=#footnotes>8</a></sup>; </span>
+                    <span class="employer">BYU Visual Arts Department, </span>
+                    <span class="location">Provo, Utah.</span>
+                </h3>
+            </div>
+            
+            <div class="job">
+                <h3>
+                    <span class="dates">August 2008–August 2010: </span>
+                    <span class="title">Bike/Ski Technician<sup><a href=#footnotes>9</a></sup>; </span>
+                    <span class="employer">Outdoors Unlimited, </span>
+                    <span class="location">Provo, Utah.</span>
+                </h3>
+            </div>
+
         </div>
-        
-        <div class="job">
-            <h3>Job Title, <span class="employer">Employer Name,</span><span class="dates"></span></h3>
-            <p>Description of job</p>
-            <h6>Skills used</h6>
+
+        <div id="lists">
+            <div class="list first" id="skills">
+                <h4>Skills</h4>
+                <ul>
+                    <li>SO</li>
+                    <li>MANY</li>
+                    <li>SKILLS</li>
+                    <li>TO</li>
+                    <li>BE</li>
+                    <li>LISTED</li>
+                </ul>
+            </div>
+
+            <div class="list" id="clients">
+                <h4>Clients</h4>
+                <ul>
+                    <li>WORKED</li>
+                    <li>FOR</li>
+                    <li>SO</li>
+                    <li>MANY</li>
+                    <li>BIG</li>
+                    <li>CLIENTS</li>
+                </ul>
+            </div>
+            
+            <div class="list" id="clients">
+                <h4>Awards</h4>
+                <ul>
+                    <li>Done</li>
+                    <li>So</li>
+                    <li>Much</li>
+                    <li>Stuff</li>
+                    <li>For</li>
+                    <li>Awards</li>
+                </ul>
+            </div>
+
+            <div class="list" id="projects">
+                <h4>Projects</h4>
+                <ul>
+                    <li><a href="http://pinograph.tumblr.com">Pin-o-graph</a></li>
+                    <li><a href="http://designerbios.tumblr.com">Designer Bios</a></li>
+                    <li>SO</li>
+                    <li>MANY</li>
+                    <li>BIG</li>
+                    <li>CLIENTS</li>
+                </ul>
+            </div>
         </div>
-        
-        <div class="job">
-            <h3>Job Title, <span class="employer">Employer Name,</span><span class="dates"></span></h3>
-            <p>Description of job</p>
-            <h6>Skills used</h6>
-        </div>
-    </div>
-    <div id="lists">
-        <div class="list" id="skills">
-            <h3>Skills</h3>
+        <div id="footnotes">
+            <h4>Footnotes</h4>
             <ul>
-                <li>SO</li>
-                <li>MANY</li>
-                <li>SKILLS</li>
-                <li>TO</li>
-                <li>BE</li>
-                <li>LISTED</li>
+                <li>1. Kevin</li>
+                <li>2. work includes: print, web and motion design, illustration, copywriting, product design, naming, strategy, etc.</li>
+                <li>3. work included: print and web design, packaging, illustration, display design, strategy.</li>
+                <li>4. work included: full-scale rebrand, design/code corporate websites & microsites, strategy.</li>
+                <li>5. work included: designing pamphlets, websites, and graphics for exhibitions and galleries.</li>
+                <li>6. <a href="http://byu.edu">Brigham Young University</a></li>
+                <li>7. Currently known as the <a href="http://designdept.byu.edu/">Department of Design</a></li>
+                <li>8. work included: teaching, assisting, and critiquing students, and maintaining 3 letterpresses.</li>
+                <li>9. work included: tuning and repairing road and mountain bikes, downhill and nordic skis and other customer and rental equipment, sales.</li>
             </ul>
         </div>
-        
-        <div class="list" id="clients">
-            <h3>Clients</h3>
-            <ul>
-                <li>WORKED</li>
-                <li>FOR</li>
-                <li>SO</li>
-                <li>MANY</li>
-                <li>BIG</li>
-                <li>CLIENTS</li>
-            </ul>
-        </div>
-        
-        <div class="list" id="projects">
-            <h3>Projects</h3>
-            <ul>
-                <li><a href="http://pinograph.tumblr.com">Pin-o-graph</a></li>
-                <li><a href="http://designerbios.tumblr.com">Designer Bios</a></li>
-                <li>SO</li>
-                <li>MANY</li>
-                <li>BIG</li>
-                <li>CLIENTS</li>
-            </ul>
-        </div>
+
+
     </div>
-    
-    
-</div>
 </body>
+
 </html>

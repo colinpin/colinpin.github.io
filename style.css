@@ -1,0 +1,94 @@
+body{
+    background-size: auto;
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#me,#education,#work,#lists,#footnotes {
+    width: 100%;
+    margin: 90px 0 0 0;
+}
+
+h1 {
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 4em;
+    margin: 0 0 0 0;
+    line-height: .8em;
+}
+
+h2 {
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 4em;
+    line-height: .2em;
+}
+
+h3 {
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+}
+
+h4 {
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 0 0 10px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-indent: none;
+}
+
+sup {
+    font-family: Courier New, Courier, monospace;
+    position: relative;
+    color: #0000ff;
+} 
+
+#me sup {
+    font-size: .25em;
+    top: -1.5em;
+}
+
+#work sup {
+    font-size: .5em;
+    top:-.5em;
+}
+
+#page {
+    padding: 5%;
+}
+
+#me {
+    margin: 10px 0px 50px 0px;
+}
+
+#bio h3 {
+    margin-top: 80px;
+}
+
+.background {
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index: -1;
+}
+
+.list {
+    display: inline-block;
+}
+
+.list:not(.first) {
+    margin: 0px 0px 0px 20px;
+}
+
+.job { 
+   padding: 15px 0 0 0;
+}
