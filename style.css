@@ -2,6 +2,7 @@ body{
     background-size: auto;
     padding: 0;
     margin: 0;
+    color: black;
 }
 
 #me,#education,#work,#lists,#footnotes {
@@ -13,15 +14,15 @@ h1 {
     font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
     font-weight: 200;
     font-size: 4em;
-    margin: 0 0 0 0;
-    line-height: .8em;
+    margin: 0 0 0 .7em;
+    line-height: 1.3em;
 }
 
 h2 {
     font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
     font-weight: 200;
     font-size: 4em;
-    line-height: .2em;
+    line-height: .7em;
 }
 
 h3 {
@@ -38,6 +39,23 @@ h4 {
     margin: 0 0 10px 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid currentColor;
+}
+
+h1 a {
+    border-bottom: none;
+}
+
+a:hover, a:visited {
+    text-decoration: none;
+    border-bottom: none;
+    color: blue;
+}
+
+
 ul {
     margin: 0;
     padding: 0;
@@ -53,12 +71,23 @@ sup {
 
 #me sup {
     font-size: .25em;
-    top: -1.5em;
+    top: -2.5em;
 }
 
 #work sup {
     font-size: .5em;
-    top:-.5em;
+    top:-1em;
+}
+
+sup a {
+    color: blue;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+sup a:hover {
+    text-decoration: none;
+    color: blue;
 }
 
 #page {
@@ -90,4 +119,12 @@ sup {
 
 .job { 
    padding: 15px 0 0 0;
+}
+
+.title, .degree{
+    font-style: italic;
+}
+
+.emoji {
+    font-size: .5em;
 }
