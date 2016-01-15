@@ -1,20 +1,25 @@
-body{
+body, #page{
     background-size: auto;
+    width: 100%;
     padding: 0;
     margin: 0;
     color: black;
 }
 
-#me,#education,#work,#lists,#footnotes {
+#me,#education,#work,#lists {
     width: 100%;
-    margin: 90px 0 0 0;
+    margin: 50px 0 0 0;
+}
+
+#footnotes{
+    margin: 100px 0 -30px 0;
 }
 
 h1 {
     font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
     font-weight: 200;
     font-size: 4em;
-    margin: 0 0 0 .7em;
+    margin: 0 0 0 0;
     line-height: 1.3em;
 }
 
@@ -33,15 +38,16 @@ h3 {
 
 h4 {
     font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 2em;
+    font-weight: 700;
+    font-size: 1em;
     text-decoration: underline;
-    margin: 0 0 10px 0;
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: currentColor;
     border-bottom: 2px solid currentColor;
 }
 
@@ -67,6 +73,7 @@ sup {
     font-family: Courier New, Courier, monospace;
     position: relative;
     color: #0000ff;
+    font-style: none;
 } 
 
 #me sup {
@@ -109,16 +116,29 @@ sup a:hover {
     z-index: -1;
 }
 
+/* LISTS */
+
+.list li{
+    font-size: 1.3em;
+    font-family: "acumin-pro-wide", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    display: inline;
+}
+
+
 .list {
     display: inline-block;
+    padding-left: 0;
+    margin-bottom: 30px;
+    padding-right: 30px;
 }
 
-.list:not(.first) {
+/*.list:not(.first) {
     margin: 0px 0px 0px 20px;
-}
+}*/
 
 .job { 
-   padding: 15px 0 0 0;
+   padding: 0 0 10px 0;
 }
 
 .title, .degree{
@@ -126,5 +146,11 @@ sup a:hover {
 }
 
 .emoji {
-    font-size: .5em;
+    font-size: 30px;
+    padding-right: 5px;
+}
+
+#footnotes li{
+    color: blue;
+    font-family: "whoismono", Courier New, Courier, monospace;
 }
