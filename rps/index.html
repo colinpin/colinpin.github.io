@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="col-lg-12">
+        <p>Try to beat the robot at <em>Rock, Paper, Scissors</em>. Choose what you want to throw and click the corresponding button below.</p>
+    </div>
+    <div id="result-block">
+        <h1><span id="result" class="col-lg-12">Pick One:</span></h1>
+    </div>
+    <div class="rps col-xs-4">
+        <button id="rock" onclick="play('rock')">Rock</button>
+    </div>
+
+    <div class="rps col-xs-4">
+        <button id="paper" onclick="play('paper')">Paper</button>
+    </div>
+
+    <div class="rps col-xs-4">
+        <button id="scissors" onclick="play('scissors')">Scissors</button>
+    </div>
+    
+    
+    <!--SCRIPTS-->
+    
+    <script src="app.js"/></script>
+    
+</body>
+
+</html>

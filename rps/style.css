@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 30px 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10em;
+}
+
+button {
+    border: solid 5px black;
+    background: none;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+button:focus {outline:0;}
+
+/*#rock {
+    padding: 5px;
+    background: url(http://img2.wikia.nocookie.net/__cb20141120133208/epicrapbattlesofhistory/images/4/4b/A_Rock!.gif) no-repeat center;
+}*/
+
+#result-block{
+    margin: 230px 0;
+}
+
+.rps {
+    padding: 200px 0 30px 0;
+}
+
